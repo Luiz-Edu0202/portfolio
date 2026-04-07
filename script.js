@@ -22,9 +22,9 @@ const educationData = [
 ];
 
 const awards = [
-    "🏆 Top 10 - Robô Seguidor de Linha @ RoboCore Experience (2023)",
-    "🎓 Voluntário na The Developer Conference (TDC) 2019",
-    "🎮 Participante da Global Game Jam (2019)"
+    "🏆 Top 10 - Line Follower Robot @ RoboCore Experience (2023)",
+    "🎓 Volunteer at The Developer Conference Recife (TDC) 2019",
+    "🎮 Global Game Jam participant (2019)"
 ];
 
 // ======================== TRADUÇÕES ========================
@@ -152,7 +152,7 @@ langToggle.addEventListener("click", () => {
 });
 
 // ======================== FORMULÁRIO DE CONTATO ========================
-const contactForm = document.getElementById("contactForm");
+/*const contactForm = document.getElementById("contactForm");
 if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -164,8 +164,7 @@ if (contactForm) {
             contactForm.reset();
         } else alert(currentLang === "en" ? "Please fill all fields." : "Preencha todos os campos.");
     });
-}
-
+}*/
 document.getElementById("currentYear").innerText = new Date().getFullYear();
 const resumeBtn = document.getElementById("resumeBtn");
 if (resumeBtn) resumeBtn.addEventListener("click", (e) => { e.preventDefault(); alert("Link para o currículo PDF - substitua pelo link real."); });
