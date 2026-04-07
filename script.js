@@ -3,7 +3,7 @@
 const skillsList = [
     "Python (Django/Flask)", "Java (Spring Boot, Maven)", "C / C++", "C#", "JavaScript", "HTML5/CSS3",
     "MySQL / SQLite", "Git & GitHub Actions", "Azure / CI-CD", "REST APIs", "Testes Unitários", "Arduino / ESP32",
-    "Unity 2D", "Linux / DevOps", "MVC", "POO", "Bootstrap", "Português e Inglês"
+    "Unity 2D", "Linux / DevOps", "MVC", "POO", "Bootstrap", "Portuguese and English"
 ];
 
 // Projetos 
@@ -31,22 +31,22 @@ const awards = [
 const translations = {
     en: {
         logo: "Luiz Brayner", nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_education: "Education", nav_contact: "Contact",
-        hero_badge: "🚀 Full-Stack & Robotics", hero_desc: "Python • Java • C++ • Embedded Systems • Web — Efficient solutions from backend to robots.",
+        hero_badge: "🚀 Back-end & DevOps", hero_desc: "C • Python • Java • Embedded Hardware • Web — From low-level systems to end-to-end solutions.",
         hero_btn_contact: "Hire Me", hero_btn_resume: "Resume", about_title: "About Me",
-        about_text1: "🚀 Since 2018, I've built a solid tech career — starting with game development (C#, Unity) and evolving into full-stack & embedded systems.",
-        about_text2: "🎓 Computer Science at CESAR School (3 semesters) gave me end-to-end software lifecycle experience. Currently pursuing Systems Analysis at IFPE (2025–present), deepening skills in databases, web dev, and statistics.",
-        about_text3: "💡 Passionate about robotics (PID-controlled line-following robots, Top 10 at RoboCore) and building practical tools like KOLEKTO, PRIS.ME, and SUB! — always aiming for clean code and collaborative solutions.",
+        about_text1: "🚀 Since 2018, I've built a solid tech career. I started with a technical degree in Digital Game Programming, where I learned C#, Unity, OOP, and agile methods, while participating in hackathons and events like TDC.",
+        about_text2: "💻 My hands‑on experience is centered on C and Python – languages I use for system development, automation, and hardware projects (e.g., line‑following robots with ESP32 and PID control). I also work with Java, databases, and DevOps tools.",
+        about_text3: "🎓 I'm currently pursuing a degree in Systems Analysis and Development at IFPE (2025–present), deepening my skills in web development, statistics, and data management. I aim to apply this knowledge to collaborative, high‑impact solutions.",
         skills_title: "Tech Stack & Skills", projects_title: "Featured Projects", education_title: "Education & Awards", contact_title: "Let's Connect",
         contact_name: "Your Name", contact_email: "Email Address", contact_msg: "Your Message...", contact_send: "Send Message", contact_demo: "(Demo — replace with actual backend)",
         footer_tag: "Built with HTML/CSS/JS"
     },
     pt: {
         logo: "Luiz Brayner", nav_home: "Início", nav_about: "Sobre", nav_skills: "Habilidades", nav_projects: "Projetos", nav_education: "Formação", nav_contact: "Contato",
-        hero_badge: "🚀 Full-Stack & Robótica", hero_desc: "Python • Java • C++ • Sistemas Embarcados • Web — Soluções eficientes do backend aos robôs.",
+        hero_badge: "🚀  Back-end & DevOps", hero_desc: "C • Python • Java • Hardware Embarcado • Web — De sistemas de baixo nível a soluções ponta a ponta.",
         hero_btn_contact: "Contrate-me", hero_btn_resume: "Currículo", about_title: "Sobre mim",
-        about_text1: "🚀 Desde 2018 construo uma carreira sólida em tecnologia — comecei com desenvolvimento de jogos (C#, Unity) e evolui para full-stack e sistemas embarcados.",
-        about_text2: "🎓 Passei pela Ciência da Computação na CESAR School (3 semestres) com experiência no ciclo completo de software. Atualmente curso Análise e Desenvolvimento de Sistemas no IFPE (2025–atual), aprofundando bancos de dados, desenvolvimento web e estatística.",
-        about_text3: "💡 Apaixonado por robótica (robô seguidor de linha com controle PID, Top 10 na RoboCore) e por ferramentas práticas como KOLEKTO, PRIS.ME e SUB! — sempre buscando código limpo e soluções colaborativas.",
+        about_text1: "🚀 Desde 2018 construo uma carreira sólida em tecnologia. Comecei no curso técnico de Programação de Jogos Digitais, onde desenvolvi lógica de programação com C#, Unity, POO e métodos ágeis, além de participar de hackathons e eventos como TDC.",
+        about_text2: "💻 Minha experiência prática se consolidou com C e Python – linguagens que utilizo para desenvolvimento de sistemas, automação e projetos de hardware (como robôs seguidores de linha com ESP32 e controle PID). Também atuo com Java, bancos de dados e ferramentas de DevOps.",
+        about_text3: "🎓 Atualmente curso Análise e Desenvolvimento de Sistemas no IFPE (2025–atual), aprofundando-me em desenvolvimento web, estatística e gestão de dados. Busco aplicar esse conhecimento em soluções colaborativas e de alto impacto.",
         skills_title: "Tecnologias & Habilidades", projects_title: "Projetos em Destaque", education_title: "Formação e Prêmios", contact_title: "Vamos Conectar",
         contact_name: "Seu nome", contact_email: "Seu e-mail", contact_msg: "Sua mensagem...", contact_send: "Enviar mensagem", contact_demo: "(Demo — substitua por backend real)",
         footer_tag: "Feito com HTML/CSS/JS"
