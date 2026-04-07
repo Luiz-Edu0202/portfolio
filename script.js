@@ -166,9 +166,33 @@ if (contactForm) {
     });
 }*/
 document.getElementById("currentYear").innerText = new Date().getFullYear();
+// Botão de download do currículo com idioma dinâmico
 const resumeBtn = document.getElementById("resumeBtn");
-if (resumeBtn) resumeBtn.addEventListener("click", (e) => { e.preventDefault(); alert("Link para o currículo PDF - substitua pelo link real."); });
-
+if (resumeBtn) {
+    resumeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        
+        // Define os arquivos conforme o idioma atual (currentLang é 'pt' ou 'en')
+        const lang = currentLang;
+        let fileUrl, fileName;
+        
+        if (lang === 'pt') {
+            fileUrl = 'assets/pdfs/curriculo_PTBR.pdf';
+            fileName = 'Curriculo_Luiz_Brayner.pdf';
+        } else {
+            fileUrl = 'assets/pdfs/resume_EN.pdf';
+            fileName = 'Resume_Luiz_Brayner.pdf';
+        }
+        
+        // Cria um link temporário e força o download
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+}
 // Inicialização
 renderSkills();
 const savedLang = localStorage.getItem("preferredLang") || "pt";
