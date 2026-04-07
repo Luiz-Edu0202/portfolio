@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Luiz Eduardo Brayner | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<header>
+    <div class="container navbar">
+        <div class="logo" data-i18n="logo">Luiz Brayner</div>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" data-i18n="nav_home">Início</a></li>
+            <li><a href="#about" data-i18n="nav_about">Sobre</a></li>
+            <li><a href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+            <li><a href="#projects" data-i18n="nav_projects">Projetos</a></li>
+            <li><a href="#education" data-i18n="nav_education">Formação</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contato</a></li>
+            <li><button class="lang-toggle" id="langToggle"><i class="fas fa-globe"></i> <span id="langLabel">PT</span></button></li>
+            <li><div class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></div></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <section id="home">
+        <div class="container hero">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero_badge">🚀 Full-Stack & Robótica</div>
+                <h1>Luiz Eduardo <span class="highlight">Araujo Brayner</span></h1>
+                <p data-i18n="hero_desc">Python • Java • C++ • Sistemas Embarcados • Web — Soluções eficientes do backend aos robôs.</p>
+                <div class="btn-group">
+                    <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> <span data-i18n="hero_btn_contact">Contrate-me</span></a>
+                    <a href="#" class="btn-outline" id="resumeBtn"><i class="fas fa-download"></i> <span data-i18n="hero_btn_resume">Currículo</span></a>
+                </div>
+            </div>
+            <div class="hero-illustration">
+                <i class="fas fa-microchip"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">Sobre mim</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_text1">🚀 Desde 2018 construo uma carreira sólida em tecnologia — comecei com desenvolvimento de jogos (C#, Unity) e evolui para full-stack e sistemas embarcados.</p>
+                    <p data-i18n="about_text2">🎓 Passei pela Ciência da Computação na CESAR School (3 semestres) com experiência no ciclo completo de software. Atualmente curso Análise e Desenvolvimento de Sistemas no IFPE (2025–atual), aprofundando bancos de dados, desenvolvimento web e estatística.</p>
+                    <p data-i18n="about_text3">💡 Apaixonado por robótica (robô seguidor de linha com controle PID, Top 10 na RoboCore) e por ferramentas práticas como KOLEKTO, PRIS.ME e SUB! — sempre buscando código limpo e soluções colaborativas.</p>
+                </div>
+                <div class="about-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">Tecnologias & Habilidades</h2>
+            <div class="skills-grid" id="skillsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Projetos em Destaque</h2>
+            <div class="projects-grid" id="projectsGrid"></div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title" data-i18n="education_title">Formação e Prêmios</h2>
+            <div class="education-grid" id="educationGrid"></div>
+            <div class="award-list" id="awardList"></div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="background: var(--bg-secondary);">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">Vamos Conectar</h2>
+            <div class="contact-container">
+                <form id="contactForm">
+                    <div class="form-group"><input type="text" id="name" placeholder="Seu nome" data-i18n-placeholder="contact_name"></div>
+                    <div class="form-group"><input type="email" id="email" placeholder="Seu e-mail" data-i18n-placeholder="contact_email"></div>
+                    <div class="form-group"><textarea id="message" placeholder="Sua mensagem..." data-i18n-placeholder="contact_msg"></textarea></div>
+                    <button type="submit" class="btn-primary" style="width:100%; justify-content:center;"><i class="fas fa-paper-plane"></i> <span data-i18n="contact_send">Enviar mensagem</span></button>
+                    <p style="font-size:0.75rem; margin-top:1rem; text-align:center; color: var(--text-secondary);" data-i18n="contact_demo">(Demo — substitua por backend real)</p>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="social-links">
+        <a href="https://linkedin.com/in/luizeduardobrayner" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/luizeduardobrayner" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:Brayner.luizeduardo@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>© <span id="currentYear"></span> Luiz Eduardo Brayner · <span data-i18n="footer_tag">Feito com HTML/CSS/JS</span></p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
